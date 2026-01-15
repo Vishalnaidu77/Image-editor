@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;  
+    font-family: 'Times New Roman', Times, serif;  
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+}
+
+main{
+    width: 100%;
+}
+
+main section{
+    width: 100%;
+    padding: var(--padding-2xl);
+    display: flex;
+    gap: var(--gutter-lg);
+}
+
+.btn{
+    padding: var(--padding-sm) var(--padding-lg);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-md);
+    background-color: var(--bg-active-color);
+    cursor: pointer;
+    color: var(--text-active-color);
+    transition: all 0.1s ease;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+main section .top{
+    display: flex;
+    gap: var(--gutter-md);
+    align-items: center;
+}
+
+#reset-btn{
+    background-color: var(--bg-danger-color);
+    color: var(--text-secondary-color);
+}
+
+#download-btn{
+    background-color: var(--bg-success-color);
+    color: var(--text-secondary-color);
+}
+
+main section .left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-lg);
+}
+
+main .right{
+    width: 30%;
+    background-color: var(--bg-secondary-color);
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+}
+
+main section .bottom{
+    background-color: var(--bg-secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: var(--padding-2xl);
+    aspect-ratio: 5/3;
+    border-radius: var(--border-radius-xl);
+}
+
+main section .bottom .placeholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+    gap: var(--gutter-md);
+}
+
+main section .bottom .placeholder p{
+    font-size: var(--font-size-lg);
+
+}
+
+main section .right .filter{
+    width: 100%;
+}
+
+main section .right .filter input{
+    width: 100%;
+    margin-top: var(--margin-sm);
+    appearance: none;
+}
+
+main section .right .filter input::-webkit-slider-thumb{
+    cursor: pointer;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--bg-danger-color);
+    margin-top: -8.5px;
+}
+
+main section .right .filter input::-webkit-slider-runnable-track{
+    height: 3px;
+    background-color: var(--bg-active-color);
+    border-radius: var(--border-radius-md);
+}
+

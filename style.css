@@ -103,7 +103,7 @@ main section .bottom .placeholder p{
 main section .right .filters{
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-xl);
+    gap: var(--gutter-md);
 }
 
 main section .right .filter{
@@ -136,8 +136,15 @@ main section .right .filter input::-webkit-slider-runnable-track{
     border-radius: var(--border-radius-md);
 }
 
-
-
 canvas{
-    background-color: white;
+    display: none;
+    max-width: 90vw;
+    max-height: 80vh;
+}
+
+.presets-box{
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
 }
